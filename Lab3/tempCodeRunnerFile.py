@@ -1,1 +1,0 @@
-Day.SUN.difference(Day.SAT)
