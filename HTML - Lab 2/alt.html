@@ -1,0 +1,35 @@
+<html>
+  <body onLoad="
+            //Wypisywanie tekstu w konsoli
+            console.log('Tekst 1');
+
+            // Wypisywanie tekstu w komunikacie
+            //window.alert('Tekst 2');
+            
+            //Wypisywanie tekstu na stronie - powodowało niewypisywanie divów
+            //document.write('Tekst 3');
+            ">
+    <div>Treść dokumentu HTML</div>
+    <div>Treść dokumentu HTML</div>
+    <div>Treść dokumentu HTML</div>
+    <script>
+        // Otwiera okno do wpisania tekstu
+        // Składnia:
+        //  prompt()
+        //  prompt(message)
+        //  prompt(message, defaultValue)
+        // message - Tekst nad inputem - polecenie, instrukcja
+        // defaultValue - tekst domyślny wstawiany do inputu
+        // message i defaultValue nie są obowiązkowe 
+        
+        let userInput = window.prompt("Tekst1", "Tekst2");
+        alert(typeof(userInput))
+
+    // Zbadaj, co jest zwracane (wartość, typ danych) w przypadku:
+    //  Wprowadzeniu wartości będącej liczbą i naciśnięciu klawisza 'Enter' lub przycisku 'OK' -> wartość, string 
+    //  Wprowadzeniu wartości będącej napisem i naciśnięciu klawisza 'Enter' lub przycisku 'OK' -> wartość, string
+    //  Niewprowadzeniu wartości i naciśnięciu powyższego klawisza / przycisku -> "", string
+    //  Wprowadzeniu wartości i naciśnięciu przycisku 'Anuluj' -> object
+    </script>
+  </body>
+</html>

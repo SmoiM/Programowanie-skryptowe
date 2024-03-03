@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <!-- Można to traktować jak listę w liście - lista form i w każdym z nich lista input -->
+        <form name = "formularz">
+            <input name="pole_tekstowe" type="text">
+            <input name="pole_liczbowe" type="number">
+            <input type="button" value="Wypisz">
+        </form>
+
+        <script src="formSkrypt.js"></script>
+
+    </body>
+</html>
+
+<!-- 
+Zbadaj, co jest zwracane (wartość, typ danych) w przypadku:
+    Wprowadzeniu wartości będącej liczbą i naciśnięciu powyższego przycisku -> liczba, string
+    Wprowadzeniu wartości będącej napisem i naciśnięciu w/w przycisku -> napis, string
+    Niewprowadzeniu wartości i naciśnięciu przycisku "Wypisz" -> nic, string
+-->

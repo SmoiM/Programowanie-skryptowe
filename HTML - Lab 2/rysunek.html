@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Page title
+    </title> 
+  </head>
+
+  <body>
+    <main>
+        <h1>
+            Płótno
+        </h1>
+
+        <h1>
+            Canvas
+        </h1>
+
+        <canvas id="canvas"
+            width="200"
+            height="300"
+            style="border:1px solid #000000;">
+            Wygląda na to, że twoja przeglądarka nie obsługuje elementu "canvas" / It looks like your browser does not support the "canvas" element
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillText("Hello World", 10, 50); //Wykreślenie podanego tekstu na płótnie / Drawing given text on canvas
+
+            // (x, y, długość, wysokość)
+            ctx.fillStyle = "blue"; // kolor wypełnienia
+            ctx.fillRect(10, 230, 180, 10)
+            
+            // (x, y, długość, wysokość)
+            ctx.fillRect(26, 120, 8, 100)
+            
+            // (x, y, długość, wysokość)
+            ctx.fillRect(5, 120, 50, 10)
+            
+            //(x, y, promień, kąt początkowy, kąt końcowy)
+            ctx.beginPath();
+            ctx.arc(30, 240, 25, 0, 2 * Math.PI);
+            ctx.fillStyle = "red";
+            ctx.fill(); // wypełnienie kolorem
+
+            ctx.beginPath();
+            ctx.arc(170, 240, 25, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.moveTo(200, 230);
+            ctx.lineTo(140, 230);
+            ctx.lineTo(170, 205);
+            ctx.fillStyle = "purple";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(0, 230);
+            ctx.lineTo(60, 230);
+            ctx.lineTo(30, 205);
+            ctx.fillStyle = "purple";
+            ctx.fill();
+        </script>
+    </main>
+  </body>
+</html>
